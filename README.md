@@ -1,4 +1,3 @@
 # Tarea-2-de-analisis-de-datos
 
-Tarea donde se aplicó un clasificador ensamblado ente catboost y random forest para utilizarlos en clasificación de Galaxias.
-
+El código realiza un proceso de preprocesamiento y clasificación de datos utilizando técnicas de aprendizaje automático. Primero, selecciona características altamente correlacionadas y filtra los datos para excluir una clase específica. Luego, escala las características con StandardScaler y aplica SMOTE para balancear las clases. A continuación, utiliza PCA para reducir las dimensiones a 20 componentes y divide los datos en conjuntos de entrenamiento y prueba (70% y 30%, respectivamente). Se entrenan dos modelos: un RandomForestClassifier y un CatBoostClassifier, que se ensamblan mediante un VotingClassifier con votación suave. Tras entrenar el modelo de ensamble, se evalúa en el conjunto de prueba, calculando el F1-score, que resulta ser 0.8933, indicando un buen rendimiento. También se genera una matriz de confusión para visualizar las clasificaciones y se calculan las curvas ROC y AUC para cada clase, permitiendo una evaluación más detallada del modelo.
